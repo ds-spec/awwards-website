@@ -29,15 +29,18 @@ const AnimatedTitle = ({ title, containerClass }) => {
   }, []);
 
   return (
-    <div ref={containerRef} className={`animated-title ${containerClass}`}>
+    <div
+      ref={containerRef}
+      className={`animated-title ${containerClass} special-font hero-heading`}
+    >
       {title.split("<br />").map((line, index) => (
         <div
           key={index}
           className="flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3"
         >
-          {line.split(" ").map((word, i) => (
+          {line.split(" ").map((word, idx) => (
             <span
-              key={i}
+              key={idx}
               className="animated-word"
               dangerouslySetInnerHTML={{ __html: word }}
             />
