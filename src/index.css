@@ -55,7 +55,7 @@ body {
 
 @layer utilities {
   .border-hsla {
-    @reference border border-white/20;
+    @apply border border-white/20;
   }
 
   .nav-hover-btn {
@@ -115,7 +115,7 @@ body {
   }
 
   .bento-title {
-    @reference uppercase md:text-6xl text-4xl font-black font-zentry;
+    @apply uppercase md:text-6xl text-4xl font-black font-zentry;
   }
 
   .story-img-container {

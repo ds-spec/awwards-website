@@ -21,7 +21,7 @@ const Navbar = () => {
       navContainerRef.current.classList.remove("floating-nav");
     } else if (currentScrollY > lastScrollY) {
       setIsNavVisible(false);
-      navContainerRef.current.classList.add("floating-nav");
+      navContainerRef.current.classList.remove("floating-nav");
     } else if (currentScrollY < lastScrollY) {
       setIsNavVisible(true);
       navContainerRef.current.classList.add("floating-nav");
